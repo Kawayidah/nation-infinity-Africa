@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Donate page</title>
+  <link rel="stylesheet" href="./Donate page.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Nation Infinity</title>
+  <link rel="stylesheet" href="Donate page.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="file:///F:/Nation%20infinity%20wedsite/image/logo.png" alt="logo" />
+        <span class="nation-infinity">NATION INFINITY AFRICA</span> <!-- Added Nation Infinity text -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="projects page.html">Projects</a></li>
+          <li><a href="contact page.html">Contact</a></li>
+          <li><a href="Store.html">Store</a></li>
+          <li><a href="Children profiles page.html">Children Profiles</a></li>
+        </ul>
+      </nav>
+      <a href="Donate page.html" class="btn donate-button">Donate</a>
+    </div>
+  </header>
+
+ <div class="container">
+    <h1>Donate to Nation Infinity Africa</h1>
+    
+    <div class="donation-form">
+        <label for="payment-method">Select Payment Method:</label>
+        <select id="payment-method" onchange="showPaymentSection()">
+            <option value="none">Select</option>
+            <option value="paypal">PayPal</option>
+            <option value="mobile">Mobile Money</option>
+            <option value="bank">Bank Transfer</option>
+        </select>
+
+        <div id="paypal-section" class="section hidden">
+            <h2>PayPal Payment <img src="file:///F:/Nation%20infinity%20wedsite/image/PAYPAL.png" alt="Bacground-image" /> Nation Infinity Africa</h2>
+            <input type="email" id="paypal-email" placeholder="Enter PayPal Email" required>
+            <input type="number" id="paypal-amount" placeholder="Enter Amount" required>
+            <select id="paypal-currency">
+                <option value="USD">USD ($)</option>
+                <option value="UGX">UGX (Ugandan Shillings)</option>
+            </select>
+            <div id="paypal-button-container"></div>
+        </div>
+
+        <div id="mobile-money-section" class="section hidden">
+            <h2>Mobile Money Payment</h2>
+            <input type="text" id="mobile-number" placeholder="Enter Mobile Number" required>
+            <input type="number" id="mobile-amount" placeholder="Enter Amount" required>
+            <button id="mobile-submit" class="btn">Submit Mobile Money</button>
+        </div>
+
+        <div id="bank-transfer-section" class="section hidden">
+            <h2>Bank Transfer Details</h2>
+            <p>Account Name: Nation Infinity Africa</p>
+            <p>Account Number: 09999336999</p>
+            <p>Bank: DFCCU Bank</p>
+            <button onclick="copyBankDetails()" class="btn">Copy Bank Details</button>
+        </div>
+    </div>
+
+    <div id="message" class="hidden"></div>
+</div>
+
+<footer>
+  <div class="footer-container">
+      <!-- Get Involved Section -->
+      <div class="footer-section">
+          <h4>Get Involved</h4>
+          <ul>
+              <li><a href="Donate page.html">Donate</a></li>
+              <li><a href="Support.html">Support</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li> <!-- Added Volunteer link -->
+          </ul>
+      </div>
+
+      <!-- Developers Section -->
+      <div class="footer-section">
+          <h4>Developers</h4>
+          <ul>
+              <li><a href="contribute.html">Contribute</a></li> <!-- Added Contribute link -->
+              <li><a href="opensource.html">Open Source</a></li> <!-- Added Open Source link -->
+              <li><a href="documentation.html">Documentation</a></li> <!-- Added Documentation link -->
+          </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul>
+              <li><a href="https://twitter.com">Twitter</a></li> <!-- Twitter external link -->
+              <li><a href="https://youtube.com">YouTube</a></li> <!-- YouTube external link -->
+              <li><a href="https://facebook.com">Facebook</a></li> <!-- Facebook external link -->
+              <li><a href="https://instagram.com">Instagram</a></li> <!-- Instagram external link -->
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <p>&copy; 2024 Nation Infinity Africa. All rights reserved.</p>
+      <p>Designed by Kawayidah De Man</p>
+  </div>
+</footer>
+<!-- partial -->
+<script  src="./Support.js"></script>
+
+</body>
+</html>
+
+  <!-- PayPal SDK and JavaScript -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AXNXtyB562jfayI9cz43qr8rqx5NX2c_Qdmlt0wqSOfkS8Jpzydq9Z73NDWvHPPWRVQe0PqA0UBR_RxX"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./Donate page.js"></script>
+
+</body>
+</html>

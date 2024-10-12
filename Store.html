@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Store</title>
+  <link rel="stylesheet" href="./Store.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Nation Infinity</title>
+  <link rel="stylesheet" href="Store.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="file:///F:/Nation%20infinity%20wedsite/image/logo.png" alt="logo" />
+        <span class="nation-infinity">NATION INFINITY AFRICA</span> <!-- Added Nation Infinity text -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="projects page.html">Projects</a></li>
+          <li><a href="contact page.html">Contact</a></li>
+          <li><a href="Store.html"class="active">Store</a></li>
+          <li><a href="Children profiles page.html">Children Profiles</a></li>
+        </ul>
+      </nav>
+      <a href="Donate page.html" class="btn donate-button">Donate</a>
+    </div>
+  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Store.css">
+    <title>Nation Infinity Africa - Online Store</title>
+</head>
+<body>
+    <header>
+        <h1>Nation Infinity Africa</h1>
+        <nav>
+            <button id="checkout-btn" class="hidden" onclick="goToPayment()">Checkout</button>
+        </nav>
+        <div id="product-count">
+            <p>Total Products in Store: <span id="total-products">0</span></p>
+        </div>
+    </header>
+
+    <main id="store">
+        <h2>Our Products</h2>
+        <div id="product-list"></div>
+    </main>
+
+    <section id="payment" class="hidden">
+        <h2>Payment</h2>
+        <div id="cart-summary" class="hidden">
+            <h3>Cart Summary:</h3>
+            <p id="total-quantity"></p>
+            <p id="total-amount"></p>
+            <ul id="cart-items"></ul>
+        </div>
+        <div class="payment-methods">
+            <button onclick="goBackToStore()">Back to Store</button>
+            <h3>Select Payment Method:</h3>
+            <form onsubmit="processPayment(event, 'Credit Card')">
+                <button type="submit" class="payment-button">Pay with Credit Card</button>
+            </form>
+            <form onsubmit="processPayment(event, 'PayPal')">
+                <button type="submit" class="payment-button">Pay with PayPal</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nation Infinity Africa. All rights reserved.</p>
+      
+      <div>
+      <p>Designed by Kawayidah De Man</p>
+    </div>
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./Store.js"></script>
+
+</body>
+</html>

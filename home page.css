@@ -1,0 +1,575 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppin', lato;
+    background-color: #01181bd8; /* Dark background for better contrast */
+    color: #fffcfc; /* White text for readability */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Black navbar */
+    padding: 15px 1px;
+    box-shadow: 0 2px 10px rgb(14, 13, 13); /* Red shadow for a striking effect */
+    position: fixed; /* Changed to fixed to keep navbar in view while scrolling */
+    width: 100%; /* Ensure the navbar stretches across the page */
+    top: 0; /* Fix at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar .logo img {
+    width: 50px; /* Adjusted to fit the new color scheme */
+    height: auto;
+    margin-left:100px; /* Adds some space between the logo and the text */
+}
+/* Styling for Nation Infinity Text */
+.nation-infinity {
+    font-size: auto;
+    font-weight: bold;
+    color: #15dcff; /* White text */
+    margin-left:50px; /* Adds some space between the logo and the text */
+    margin-right: auto; /* Adds space between the text and the Home link */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff; /* White text for navbar links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff0000; /* Red on hover */
+    transform: scale(1.1);
+}
+/* Active link style */
+.navbar nav ul li a.active {
+    color: #ff0000; /* Change text color for the active link */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.business-button {
+    background-color: #ff0000; /* Red button */
+    color: #ffffff;
+}
+
+.btn.business-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.btn.children-button {
+    background-color: #ff0000; /* Red button */
+    color: #ffffff;
+}
+
+.btn.children-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.btn.donate-button {
+    background-color: #15dcff; /* Red donate button */
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right:150px; /* Adds some space between the logo and the text */
+}
+
+.btn.donate-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    width: 97.5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/background.jpg'); /* Default image */
+  }
+  
+  /* Video Background Styling */
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0; /* By default, hidden unless video is available */
+  }
+  
+  .banner-content {
+    z-index: 2;
+  }
+  
+  h1.reflect {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white; /* Color for the main heading */
+  }
+  
+  .blue-paragraph {
+    color: rgb(0, 204, 255); /* Different color for "We Dance to Compete With The World" */
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styles */
+  .btn.learn-more {
+    background-color: #ff00004b; /* Red learn more button */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn.learn-more:hover {
+    background-color: #e6000050;
+    transform: scale(1.05);
+  }
+  
+  
+  .btn.share-button {
+    background-color: #ff000036; /* Red share button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hide the image background if video is playing */
+  #bannerVideo:not([src=""]) {
+    opacity: 1;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    h1.reflect {
+      font-size: 36px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  }
+  
+.btn.share-button:hover {
+    background-color: #f10505;
+    transform: scale(1.05);
+}
+
+.btn.subscribe-button {
+    background-color: #ff0000; /* Red subscribe button */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.subscribe-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('https://i.imgur.com/KfUMmsq.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h1.reflect {
+    font-size: 72px;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Red shadow for text */
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.banner-content .btn.learn-more {
+    background-color: #ff0000;
+}
+
+.banner-content .btn.learn-more:hover {
+    background-color: #e60000;
+}
+
+/* Content Section */
+.content {
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #d4d0c7;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff0000; /* Red headings */
+    transition: color 0.3s ease;
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* What's New Section */
+.whats-new {
+    padding: 50px 20px;
+    background-color: #bdbbbb;
+}
+
+.whats-new h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff0000;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-box {
+    background-color: #ff0000;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
+}
+
+.news-box h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #ffffff;
+}
+
+.news-box p {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+/* Platform Section */
+.platform {
+    padding: 50px 20px;
+    background-color: #bdbbbb;
+}
+
+.platform h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff0000;
+}
+
+.video-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-box {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: 380px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+}
+
+/* Social Share */
+.social-share {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.share-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00aeff; /* Red share button */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: #009de6;
+    transform: scale(1.05);
+}
+
+/* Our Sponsors Section */
+.our-sponsors {
+    padding: 50px 20px;
+    background-color: #bdb3b3;
+}
+
+.our-sponsors h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff0000;
+}
+
+.sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sponsor-box {
+    flex: 1 1 calc(20% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
+}
+
+.sponsor-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sponsor-box h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* What We Sell Section */
+.what-we-sell {
+    background-color: #c7d0d6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.what-we-sell h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.sell-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sell-item {
+    width: 300px;
+    border: 1px solid #ff0000;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f10d0d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sell-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.sell-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.sell-item img:hover {
+    transform: scale(1.05);
+}
+
+.sell-item h3 {
+    font-size: 1.5em;
+    color: #ff0000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sell-item p {
+    color: #dddddd;
+    line-height: 1.6;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Subscription Section */
+.subscription {
+    padding: 50px 20px;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+.subscription h2 {
+    font-size: 36px;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.subscription p {
+    font-size: 18px;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subscription-form button.subscribe-button {
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+footer .footer-section h4 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .footer-section ul li a:hover {
+    color: #ff0000;
+}
+
+footer .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ff0000;
+    padding-top: 15px;
+    font-size: 14px;
+}

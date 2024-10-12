@@ -1,0 +1,212 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppin', ;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Black navbar */
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgb(14, 13, 13); /* Red shadow for a striking effect */
+  position: fixed; /* Changed to fixed to keep navbar in view while scrolling */
+  width: 100%; /* Ensure the navbar stretches across the page */
+  margin-left: -40px;
+  top: -30px; /* Fix at the top */
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  width: 50px; /* Adjusted to fit the new color scheme */
+  height: auto;
+  margin-left:100px; /* Adds some space between the logo and the text */
+}
+/* Styling for Nation Infinity Text */
+.nation-infinity {
+  font-size: auto;
+  font-weight: bold;
+  color: #15dcff; /* White text */
+  margin-left:50px; /* Adds some space between the logo and the text */
+  margin-right: auto; /* Adds space between the text and the Home link */
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin-right: 20px;
+}
+
+.navbar nav ul li a {
+  color: #ffffff; /* White text for navbar links */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #ff0000; /* Red on hover */
+  transform: scale(1.1);
+}
+/* Active link style */
+.navbar nav ul li a.active {
+  color: #ff0000; /* Change text color for the active link */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.business-button, .btn.children-button, .btn.donate-button {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for Form */
+.container {
+    max-width: 500px; /* Reduced width */
+    margin: 20px auto; /* Center the container */
+    background: #fff; /* White background for the box */
+    padding: 15px; /* Adjusted padding */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #000; /* Text color */
+}
+
+/* Heading Style */
+.container h1 {
+    font-size: 24px; /* Adjusted font size */
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+/* Label Style */
+.container label {
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+/* Input and Select Fields Style */
+.container input, 
+.container select {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Added padding for comfort */
+    margin-bottom: 15px; /* Space between elements */
+    border: 1px solid #ccc; /* Added border for visibility */
+    border-radius: 5px; /* Rounded edges for inputs */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+/* PayPal Section Styles */
+#paypal-section h2 {
+    font-size: 20px; /* Slightly smaller heading */
+    margin-bottom: 10px; /* Spacing below */
+}
+
+/* Logo Style */
+.logo {
+    width: 100px; /* Control logo size */
+    vertical-align: middle; /* Align with text */
+}
+
+/* Button styles within the container */
+#paypal-button-container .btn {
+    background-color: #ff0000; /* Match the theme */
+    color: #ffffff; /* White text for buttons */
+    padding: 10px; /* Button padding */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor for better UX */
+    border: none; /* No border */
+    width: 100%; /* Full width button */
+    margin-top: 10px; /* Spacing above button */
+}
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+footer .footer-section h4 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-section ul li {
+  margin-bottom: 8px;
+}
+
+footer .footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer-section ul li a:hover {
+  color: #ff0000;
+}
+
+footer .footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #ff0000;
+  padding-top: 15px;
+  font-size: 14px;
+}

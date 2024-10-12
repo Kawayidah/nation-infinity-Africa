@@ -1,0 +1,238 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppin', lato;
+    background-color: #01181bd8; /* Dark background for better contrast */
+    color: #fffcfc; /* White text for readability */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Black navbar */
+    padding: 15px 1px;
+    box-shadow: 0 2px 10px rgb(14, 13, 13); /* Red shadow for a striking effect */
+    position: fixed; /* Changed to fixed to keep navbar in view while scrolling */
+    width: 100%; /* Ensure the navbar stretches across the page */
+    margin-left: -40px;
+    top: 0; /* Fix at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar .logo img {
+    width: 50px; /* Adjusted to fit the new color scheme */
+    height: auto;
+    margin-left:100px; /* Adds some space between the logo and the text */
+}
+/* Styling for Nation Infinity Text */
+.nation-infinity {
+    font-size: auto;
+    font-weight: bold;
+    color: #15dcff; /* White text */
+    margin-left:50px; /* Adds some space between the logo and the text */
+    margin-right: auto; /* Adds space between the text and the Home link */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff; /* White text for navbar links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff0000; /* Red on hover */
+    transform: scale(1.1);
+}
+/* Active link style */
+.navbar nav ul li a.active {
+    color: #ff0000; /* Change text color for the active link */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.business-button {
+    background-color: #ff0000; /* Red button */
+    color: #ffffff;
+}
+
+.btn.business-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.btn.children-button {
+    background-color: #ff0000; /* Red button */
+    color: #ffffff;
+}
+
+.btn.children-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.btn.donate-button {
+    background-color: #15dcff; /* Red donate button */
+    color: #fffdfd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right:150px; /* Adds some space between the logo and the text */
+}
+
+.btn.donate-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.action-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+}
+
+.action-card h2 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+}
+
+.action-card p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.read-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+footer .footer-section h4 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .footer-section ul li a:hover {
+    color: #ff0000;
+}
+/* Active link style */
+.sfooter .footer-section ul li {
+    color: #ff0000; /* Change text color for the active link */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ff0000;
+    padding-top: 15px;
+    font-size: 14px;
+}
